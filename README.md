@@ -1,1 +1,1 @@
-# cosc304-project
+# COSC304 Projects
