@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
         try {
             let pool = await sql.connect(dbConfig);
 
-            res.write('<title>YOUR NAME Grocery Order List</title>');
+            res.write('<title>Barrel Boulevard</title>');
 
             let sqlQuery = "SELECT orderId, O.CustomerId, totalAmount, firstName+' '+lastName as cname, orderDate FROM OrderSummary O, Customer C WHERE O.customerId = C.customerId";
             let result = await pool.request().query(sqlQuery);
