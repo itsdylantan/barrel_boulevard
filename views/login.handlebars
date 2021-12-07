@@ -1,33 +1,64 @@
-<div style="margin:0 auto;text-align:center;display:inline">
-
-    <h3>Please Login to System</h3>
-
+<div style="margin:0 auto;text-align:center;display:inline">ç
     {{#if loginMessage}}
         <p>{{loginMessage}}</p>
     {{/if}}
 
-    <br>
-    <form name="MyForm" method=post action="/validateLogin">
-        <table style="display:inline">
-            <tr>
-                <td>
-                    <div align="right">
-                        <font face="Arial, Helvetica, sans-serif" size="2">Username:</font>
-                    </div>
-                </td>
-                <td><input type="text" name="username" size=10 maxlength=10></td>
-            </tr>
-            <tr>
-                <td>
-                    <div align="right">
-                        <font face="Arial, Helvetica, sans-serif" size="2">Password:</font>
-                    </div>
-                </td>
-                <td><input type="password" name="password" size=10 maxlength="10"></td>
-            </tr>
-        </table>
-        <br />
-        <input class="submit" type="submit" name="Submit2" value="Log In">
-    </form>
+<style>
+    body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+</style>
+
+  <form name="MyForm" method=post action="/validateLogin">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input class="form-control" id="floatingInput" placeholder="username" type="text" name="username" size=10 maxlength=10> 
+      <label for="floatingInput">Username:</label>
+    </div>
+    <div class="form-floating">
+      <input class="form-control" id="floatingPassword" placeholder="Password" type="password" name="password" size=10 maxlength="10">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" class="submit" type="submit" name="Submit2" value="Log In">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
 
 </div>
