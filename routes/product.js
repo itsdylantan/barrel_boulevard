@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
             let pool = await sql.connect(dbConfig);
             res.write('<head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> </head>');
 
-            res.write('<title>YOUR NAME Grocery - Product Information</title>');
+            res.write('<title> Product </title>');
 
             let sqlQuery = "SELECT productId, productName, productPrice, productImageURL, productImage FROM Product P  WHERE productId = @id";
             let productId = req.query.id;
