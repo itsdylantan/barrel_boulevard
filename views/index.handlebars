@@ -1,4 +1,9 @@
-<h1>The Barrel Boulevard</h1>
+
+<head>
+<link rel="stylesheet" href="/css/main.css">
+    <h1 style = "text-align: center;">The Barrel Boulevard</h1>
+</head>
+<body>
 <ul class="list-group">
   <li class="list-group-item"><a href="/login">Login</a></li>
   <li class="list-group-item"><a href="/listprod">Begin Shopping</a></li>
@@ -7,6 +12,13 @@
   <li class="list-group-item"><a href="/admin">Administrators</a></li>
   <li class="list-group-item"><a href="/logout">Log out</a></li>
 </ul>
+
+<div>
+{{body}}
+
+{{body}}
+</div>
+</body>
 {{#if username}}
     <h3 align="center">Signed in as: {{username}}</h3>
 {{/if}}
