@@ -5,16 +5,14 @@ const sql = require('mssql');
 router.get('/', function(req, res, next) {
     res.setHeader('Content-Type', 'text/html');
     (async function() {
-
-
         try {
             let pool = await sql.connect(dbConfig);
-            res.write('<head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> </head>');
+
             res.write('<title>Barrel Boulevard</title>');
             res.write('<h1>Search for products you want to buy:</h1>')
             
             res.write('<form method="get" action="listprod">');
-            res.write('<select class="form-select" size="1" name="categoryName">');
+            res.write('<select size="1" name="categoryName">');
             res.write('<option>All</option>');
             res.write('<option>Beverages</option>');
             res.write('<option>Condiments</option>');
@@ -77,14 +75,14 @@ router.get('/', function(req, res, next) {
                     .query(sqlQuery);
             }
 
-            res.write("<table class=\"table\"><tr><th></th><th>Product Name</th><th>Price</th></tr>");
-            
+            res.write("<table><tr><th></th><th>Product Name</th><th>Price</th></tr>");
             for (let i = 0; i < products.recordset.length; i++) {
                 let product = products.recordset[i];
                 res.write("<tr><td><a href=\"addcart?id=" + product.productId + "&name=" + product.productName + "&price=" + product.productPrice.toFixed(2) + "\">Add to Cart</a></td>");
                 res.write("<td><a href=\"product?id=" + product.productId + "\">" + product.productName + "</a></td><td>$" + product.productPrice.toFixed(2) + "</td></tr>");
             }
             res.write("</table>");
+
             res.end()
         } catch(err) {
             console.dir(err);
@@ -92,8 +90,6 @@ router.get('/', function(req, res, next) {
             res.end();
         }
     })();
-
 });
-
 
 module.exports = router;

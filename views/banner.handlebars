@@ -1,0 +1,38 @@
+<div id="navbar">
+    <img id="banner" src="/public/img/1.jpg" alt="DBs & Dragons">
+    
+	{{#if authenticatedUser}}
+    <span id="header_login_msg">
+		Hi, {{authenticatedUser}}! <a href="/logout">Log out</a>
+    </span>
+    {{else}}
+    <span id="header_login_msg">
+		<a href="/login">Log In</a>
+        <a href="/createuser">Register</a>
+    </span>
+	{{/if}}
+    
+    {{#if pageActive.home}}
+        <a href="/" class="active">Home</a>
+    {{else}}
+        <a href="/">Home</a>
+    {{/if}}
+
+    {{#if pageActive.showcart}}
+        <a href="/showcart" class="active">Cart</a>
+    {{else}}
+        <a href="/showcart">Cart</a>
+    {{/if}}
+
+    {{#if pageActive.listprod}}
+        <a href="/listprod" class="active">Products</a>
+    {{else}}
+        <a href="/listprod">Products</a>
+    {{/if}}
+    
+    {{#if pageActive.listorder}}
+        <a href="/listorder" class="active">Orders</a>
+    {{else}}
+        <a href="/listorder">Orders</a>
+    {{/if}}
+</div>
