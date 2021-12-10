@@ -1,11 +1,11 @@
 
 <head>
 <link rel="stylesheet" href="/css/main.css">
-    <h1 style = "text-align: center;">The Barrel Boulevard Co.</h1>
+        <h1 align="center" style="font-family: 'Courier New'; padding: 1em; border-width: 2em; border-radius: 5em; background:#f8decb; font-weight: bold;">The Barrel Boulevard Co.</h1>
 </head>
 <body>
-<nav style="display: flex; margin-right: 1em;">
-    <h2 align="center" style="font-family: 'Courier New', Courier, monospace;padding-left:30px; padding-right:30px">Login</a></h2>
+<nav style="display: flex; margin-right: 0.2em;">
+    <h2 align="center" style="font-family: 'Courier New', Courier, monospace;padding-left:30px; padding-right:5px"><a href = "/login" style = "text-decoration:none">Login</a></h2>
     <h2 align="center" style="font-family: 'Courier New', Courier, monospace;padding-left:30px; padding-right:30px"><a href="/listprod" style = "text-decoration:none">Begin Shopping</a></h2>
     <h2 align="center" style="font-family: 'Courier New', Courier, monospace;padding-left:30px; padding-right:30px"><a href="/listorder" style = "text-decoration:none">List Orders</a></h2>
     <h2 align="center" style="font-family: 'Courier New', Courier, monospace;padding-left:30px; padding-right:30px"><a href="/customer" style = "text-decoration:none">Customer Info</a></h2>
@@ -17,9 +17,27 @@
 {{body}}
 {{body}}
 </div>
-<div>
+<section style = "background: rgb(253, 240, 209); font-family: 'Courier New'; border-width: 2em; border-radius:2.5em; padding: 0.5em">
+            <div>            
+                <h1 style="font-weight:bold; text-align: center">Our Mission</h1>
+            </div>
+            <div style="text-align:center">        
+                <p style="font-weight: bold">Here at The Barrel Boulevard Co. we strive to provide the best selection of whisky in this one stop shop with a simple to use and easy to read interface. Our mission is to distribute the highest quality whisky direct to consumers. From single malt to the tastiest blended flavoured bourbon, we have something for everyone. </p>
+            </div>
+
+            <div>            
+                <h1 style="font-weight:bold; text-align:center">Executive Statement</h1>
+            </div>
+            <div style="text-align:center">        
+                <p style="font-weight: bold">The Barrel Boulevard Co. is an online store for whisky that are considered sought after but are only attainable from the other side of the pacific. We plan on providing consumers with these products with the best deal possible in terms of shipping and also customs. We’ve partnered with major shipping companies such as Canada Post, FedEx, and USPS, to ensure the best outcome of any order, time and fees wise. 
+Our integrated site provides a quick and effective way to browse our selection of whisky, place orders and receive shipment in a quick and effective manner. </p>
+            </div>
+        </section>
+<section>
+  <h1 style = "font-family: 'Courier New', Courier, monospace;padding-left:30px; padding-right:30px">Our Office Location</h1>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.808522044828!2d-119.39772668453135!3d49.93993403189897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537ded7d9ed532bf%3A0xae24b3dbcf561daa!2sUBC%20Okanagan%20Library!5e0!3m2!1sen!2sca!4v1639111016281!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
+</section>
 </body>
 {{#if username}}
     <h3 align="center">Signed in as: {{username}}</h3>
