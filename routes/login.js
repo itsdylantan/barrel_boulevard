@@ -3,7 +3,11 @@ const router = express.Router();
 
 router.get('/', function(req, res, next) {
     res.setHeader('Content-Type', 'text/html');
+    if(req.query.invalid){
+        res.write('Invalid login. Please try again.');
+    }
     // Set the message for the login, if present
+    
     let loginMessage = false;
     if (req.session.loginMessage) {
         loginMessage = req.session.loginMessage;
@@ -14,6 +18,7 @@ router.get('/', function(req, res, next) {
         title: "Login Screen",
         loginMessage: loginMessage
     });
+    
 });
 
 module.exports = router;

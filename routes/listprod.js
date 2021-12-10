@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
 
             res.write('<title>Barrel Boulevard</title>');
             res.write('<h1>Search for products you want to buy:</h1>')
-
             res.write('<form method="get" action="listprod">');
             res.write('<select size="1" name="categoryName">');
             res.write('<option>All</option>');
@@ -26,6 +25,7 @@ router.get('/', function(req, res, next) {
             res.write('<input type="text" name="productName" size="50">');
             res.write('<input type="submit" value="Submit"><input type="reset" value="Reset"> (Leave Blank for all products)');
             res.write('</form>');
+            
             
             let sqlQuery = false;
             let filter = false;
