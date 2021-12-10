@@ -137,18 +137,18 @@ CREATE TABLE review (
         ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-INSERT INTO category(categoryName) VALUES ('Beverages');
-INSERT INTO category(categoryName) VALUES ('Condiments');
-INSERT INTO category(categoryName) VALUES ('Dairy Products');
-INSERT INTO category(categoryName) VALUES ('Produce');
-INSERT INTO category(categoryName) VALUES ('Meat/Poultry');
-INSERT INTO category(categoryName) VALUES ('Seafood');
-INSERT INTO category(categoryName) VALUES ('Confections');
-INSERT INTO category(categoryName) VALUES ('Grains/Cereals');
+INSERT INTO category(categoryName) VALUES ('SCOTCH WHISKY');
+INSERT INTO category(categoryName) VALUES ('IRISH WHISKY');
+INSERT INTO category(categoryName) VALUES ('BOURBON');
+INSERT INTO category(categoryName) VALUES ('STRAIGHT BOURBON');
+INSERT INTO category(categoryName) VALUES ('BLENDED BOURBON');
+INSERT INTO category(categoryName) VALUES ('TENESSEE WHISKY');
+INSERT INTO category(categoryName) VALUES ('RYE');
+INSERT INTO category(categoryName) VALUES ('FLAVOURED WHISKY');
 
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chai', 1, '10 boxes x 20 bags',18.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chang',1,'24 - 12 oz bottles',19.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Aniseed Syrup',2,'12 - 550 ml bottles',10.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Lagavulin', 1, 'Scotch Whisky',200.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Laphroaig',1,'Scotch Whisky', 190.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Dead Rabbit Irish Whiskey',2,'Irish Whisky',150.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Cajun Seasoning',2,'48 - 6 oz jars',22.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Gumbo Mix',2,'36 boxes',21.35);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Grandma''s Boysenberry Spread',2,'12 - 8 oz jars',25.00);
@@ -175,6 +175,7 @@ INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Jack
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Singaporean Hokkien Fried Mee',8,'32 - 1 kg pkgs.',14.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Louisiana Fiery Hot Pepper Sauce',2,'32 - 8 oz bottles',21.05);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Laughing Lumberjack Lager',1,'24 - 12 oz bottles',14.00);
+
 
 INSERT INTO warehouse(warehouseName) VALUES ('Main warehouse');
 INSERT INTO productInventory(productId, warehouseId, quantity, price) VALUES (1, 1, 5, 18);

@@ -6,7 +6,7 @@ const moment = require('moment');
 router.get('/', function(req, res, next) {
     res.setHeader('Content-Type', 'text/html');
 
-    res.write('<title>YOUR NAME Grocery Shipment Processing</title>');
+    res.write('<title>The Barrel Boulevard Co.</title>');
 
     let orderId = req.query.orderId;
     orderId = parseInt(orderId);

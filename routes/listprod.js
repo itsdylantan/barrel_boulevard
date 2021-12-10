@@ -10,19 +10,18 @@ router.get('/', function(req, res, next) {
 
             res.write('<title>Barrel Boulevard</title>');
             res.write('<h1>Search for products you want to buy:</h1>')
-            
+
             res.write('<form method="get" action="listprod">');
             res.write('<select size="1" name="categoryName">');
             res.write('<option>All</option>');
-            res.write('<option>Beverages</option>');
-            res.write('<option>Condiments</option>');
-            res.write('<option>Confections</option>');
-            res.write('<option>Dairy Products</option>');
-            res.write('<option>Grains/Cereals</option>');
-            res.write('<option>Meat/Poultry</option>');
-            res.write('<option>Produce</option>');
-            res.write('<option>Seafood</option>');  
-            res.write('<option>Whiskey</option>');  
+            res.write('<option>SCOTCH WHISKY</option>');
+            res.write('<option>IRISH WHISKY</option>');
+            res.write('<option>BOURBON</option>');
+            res.write('<option>STRAIGHT BOURBON</option>');
+            res.write('<option>BLENDED BOURBON</option>');
+            res.write('<option>Meat/TENESSEE WHISKY</option>');
+            res.write('<option>RYE</option>');
+            res.write('<option>FLAVOURED WHISKY</option>');  
             res.write('</select>');
             res.write('<input type="text" name="productName" size="50">');
             res.write('<input type="submit" value="Submit"><input type="reset" value="Reset"> (Leave Blank for all products)');
