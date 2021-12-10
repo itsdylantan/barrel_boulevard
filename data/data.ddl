@@ -148,7 +148,7 @@ INSERT INTO category(categoryName) VALUES ('FLAVOURED WHISKY');
 
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Lagavulin', 1, 'Scotch Whisky',200.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Laphroaig',1,'Scotch Whisky', 190.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Aniseed Syrup',2,'12 - 550 ml bottles',10.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Dead Rabbit Irish Whiskey',2,'Irish Whisky',150.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Cajun Seasoning',2,'48 - 6 oz jars',22.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Gumbo Mix',2,'36 boxes',21.35);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Grandma''s Boysenberry Spread',2,'12 - 8 oz jars',25.00);
