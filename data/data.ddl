@@ -237,5 +237,31 @@ UPDATE Product SET productImageURL = 'img/2.jpg' WHERE ProductId = 2;
 UPDATE Product SET productImageURL = 'img/3.jpg' WHERE ProductId = 3;
 UPDATE Product SET productImageURL = 'img/4.jpg' WHERE ProductId = 4;
 UPDATE Product SET productImageURL = 'img/5.jpg' WHERE ProductId = 5;
+UPDATE Product SET productImageURL = 'img/6.jpg' WHERE ProductId = 6;
+UPDATE Product SET productImageURL = 'img/7.jpg' WHERE ProductId = 7;
+UPDATE Product SET productImageURL = 'img/8.jpg' WHERE ProductId = 8;
+UPDATE Product SET productImageURL = 'img/9.jpg' WHERE ProductId = 9;
+UPDATE Product SET productImageURL = 'img/10.jpg' WHERE ProductId = 10;
+UPDATE Product SET productImageURL = 'img/11.jpg' WHERE ProductId = 11;
+UPDATE Product SET productImageURL = 'img/12.jpg' WHERE ProductId = 12;
+UPDATE Product SET productImageURL = 'img/13.jpg' WHERE ProductId = 13;
+UPDATE Product SET productImageURL = 'img/14.jpg' WHERE ProductId = 14;
+UPDATE Product SET productImageURL = 'img/15.jpg' WHERE ProductId = 15;
+UPDATE Product SET productImageURL = 'img/16.jpg' WHERE ProductId = 16;
+UPDATE Product SET productImageURL = 'img/17.jpg' WHERE ProductId = 17;
+UPDATE Product SET productImageURL = 'img/18.jpg' WHERE ProductId = 18;
+UPDATE Product SET productImageURL = 'img/19.jpg' WHERE ProductId = 19;
+UPDATE Product SET productImageURL = 'img/20.jpg' WHERE ProductId = 20;
+UPDATE Product SET productImageURL = 'img/21.jpg' WHERE ProductId = 21;
+UPDATE Product SET productImageURL = 'img/22.jpg' WHERE ProductId = 22;
+UPDATE Product SET productImageURL = 'img/23.jpg' WHERE ProductId = 23;
+UPDATE Product SET productImageURL = 'img/24.jpg' WHERE ProductId = 24;
+UPDATE Product SET productImageURL = 'img/25.jpg' WHERE ProductId = 25;
+UPDATE Product SET productImageURL = 'img/26.jpg' WHERE ProductId = 26;
+UPDATE Product SET productImageURL = 'img/27.jpg' WHERE ProductId = 27;
+UPDATE Product SET productImageURL = 'img/28.jpg' WHERE ProductId = 28;
+UPDATE Product SET productImageURL = 'img/29.jpg' WHERE ProductId = 29;
+
+
 
 -- Loads image data for product 1
